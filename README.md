@@ -63,7 +63,9 @@ confusion
 from sklearn.metrics import classification_report
 classification_report1 = classification_report(y_test,y_pred)
 classification_report1
-lr.predict([[1,80,1,90,1,1,90,1,0,85,1,85]])
+from sklearn import metrics
+cm_display=metrics.ConfusionMatrixDisplay(confusion_matrix=confusion)
+cm_display.plot()
 ```
 
 ## OUTPUT:
@@ -80,7 +82,9 @@ lr.predict([[1,80,1,90,1,1,90,1,0,85,1,85]])
 <br>
 
 ### Confusion Matrix:
-![output](./confu.png)
+
+![image](https://github.com/lathika-sunder/Implementation-of-Logistic-Regression-Model-to-Predict-the-Placement-Status-of-Student/assets/95066409/2218cb28-3cc0-4884-93c6-95384962ab67)
+
 <br>
 
 ### Classification Report:
